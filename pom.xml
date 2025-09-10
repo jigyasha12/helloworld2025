@@ -16,10 +16,11 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
 
-  <modules>
+  <!-- Removed the modules section as no such directories exist -->
+  <!-- <modules>
     <module>server</module>
     <module>webapp</module>
-  </modules>
+  </modules> -->
 
   <distributionManagement>
     <site>
