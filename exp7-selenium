@@ -1,0 +1,53 @@
+Launch Mozilla Firefox browser.
+
+Open URL:
+👉 https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
+
+Click “Add to Firefox”.
+
+A pop-up will appear asking permission to add Selenium IDE.
+→ Click “Add”.
+
+Restart your Firefox browser.
+
+After restarting, look for the Selenium IDE icon in the top-right corner of Firefox.
+
+Click the icon to launch Selenium IDE.
+
+When prompted, click “Create a New Project” → then click OK.
+
+Rename the project to selenium_demo.
+
+Rename the test case to javaTpoint_test.
+
+set projects base url https://www.google.com/
+
+Click on the “Start Recording” button (top-right corner in Selenium IDE).
+
+In Firefox, go to:
+👉 https://www.google.com
+
+In the Google search box, type:
+Selenium DevOps Tutorials and press Enter.
+
+In the results, click the link:
+👉 “How to Use DevOps in Selenium Testing”
+(URL: https://www.softwaretestinghelp.com/devops-in-selenium-testing/
+)
+
+The Selenium IDE will record all your actions automatically.
+Notifications will appear on the top-right of your browser.
+
+Once done, go back to the IDE and click “Stop Recording”.
+
+Click on the “Run Current Test” button in the Selenium IDE toolbar.
+
+The IDE will replay all recorded browser actions.
+
+The Log Pane displays the execution summary — including success/failure results.
+
+
+Click the Save button (top-right corner in Selenium IDE).
+
+Save the project as:
+SelDevOpsdemo.side
