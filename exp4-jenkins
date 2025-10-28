@@ -1,0 +1,61 @@
+part 1
+su root
+apt-get update
+apt-get install openjdk-11-jdk 
+java -version 
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \ 
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null 
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \ 
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \ 
+  /etc/apt/sources.list.d/jenkins.list > /dev/null 
+sudo apt-get update 
+sudo apt-get install jenkins 
+jenkins --version 
+sudo systemctl start jenkins.service 
+sudo systemctl status jenkins 
+sudo ufw status
+sudo ufw allow 8080
+sudo ufw enable
+sudo ufw status
+open https://localhost:8080
+sudo cat  /var/lib/jenkins/secrets/initialAdminPassword
+#install suggested plugins
+jenkins url- http://127.0.0.1.8080/
+new item
+item name: helloworld
+desc - AUTHOR-Jigyasha Singh
+create and run in jenkins for simple helloworld in java
+#in source code management select git 
+# create a project in your GitHub account and give the Repository name-HelloWorld_29102025
+
+on terminal
+cd jenkins_lab
+gedit simple.java
+ class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+javac simple.java
+java simple
+git init
+git status
+git add .
+git status  
+git config --global user.name "jigyasha12"   
+git config --global user.email "23104017@apsit.edu.in" 
+git config --list
+git commit -m "Added helloworld java program"
+git remote add origin https://github.com/jigyasha12/HelloWorld_29102025.git 
+git push -u origin master   
+git remote set-url origin http://taken@github.com/jigyasha12/HelloWorld_29102025.git 
+git push -u origin master
+refresh github new file will be added
+
+add repo url in source code management section
+build steps:
+javac simple.java
+java simple
+build now 
+click on  build history
+
