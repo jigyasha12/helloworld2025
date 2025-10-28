@@ -1,0 +1,54 @@
+cd desktop
+cd git-jigyasha
+ls
+pwd
+sudo su
+apt-get install git
+git --version
+git config --global --unset user.name "jigyasha12"
+git config --global --unset user.email 23104017@apsit.edu.in 
+git config --list 
+-To Integrate Git account with Github: 
+-Goto www.github.com 
+-Sign-in to your account 
+-Create a Repository 
+(desc-setting git demo)
+public
+add readme
+git init
+ls -altr
+git clone https://github.com/jigyasha12/gitdemo29102025.git
+ls -altr
+cat README.md
+ #gitdemo29102025
+vi hello.py
+ print("hello")
+ls
+git add hello.py
+git status
+git commit -m "First hello.py file"
+t-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
+git remote set-url origin https://token@github.com/jigyasha12/gitdemo29102025
+git push origin main
+
+#Now I create a new file on my github page: Add file->create new file→Commit changes 
+filename-mynewfile
+edit: hello all welcome to..
+#click on commit changes
+commit message-create my newfile
+extended desc- i am commiting new file in remote repo
+commit directly to main branch
+
+in terminal 
+ls -ltr
+git pull
+ls -ltr
+cat mynewfile
+git log
+git log --oneline 
+git show mynewfile.id
+vi mynewfile
+git status
+git commit -m "added info on branching"
+git log --oneline
+git diff (addedinfoonbranching.id) (mynewfile.id)
