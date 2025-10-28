@@ -1,0 +1,22 @@
+sudo su
+find / -type f -name java
+    /usr/lib/javm/java-11-openjdk-amd64/(copy this)
+manage jenkins>tools
+#jdk
+java_home
+ /usr/lib/javm/java-11-openjdk-amd64/
+#git
+default
+git
+install automatically
+ check the box for Maven and fill the name field. Save all the settings, and now 
+the configuration of Jenkins is completed. 
+#maven 
+Mavenlatest
+install automatically 
+version 3.9.10
+
+new item
+feestyle project- name CICD_pipeline_demo
+#Switch to the Source Code Management window and paste your Github repository link. 
+Specify your branch name of the repository below and Save it.
