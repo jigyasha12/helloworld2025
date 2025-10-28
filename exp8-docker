@@ -1,0 +1,37 @@
+sudo su
+ curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh  
+ls
+cat get-docker.sh
+ docker version or docker -v
+docker info
+systemctl status docker
+systemctl start docker 
+systemctl stop docker 
+docker login
+ docker container run ubuntu cat /etc/os-release 
+docker images
+docker container ls
+docker container ls -a
+
+in another terminal
+sudo su
+docker container ls -a
+docker run hello-world 
+docker run -it ubuntu bash 
+docker images 
+Try to launch a docker image for testing purpose, you can find the images in docker public repository 
+at https://hub.docker.com 
+docker pull mysql 
+
+in another terminal
+docker container run nginx
+docker container ls -a
+docker images
+docker ps
+docker ps -a
+docker run -it ubuntu bash
+docker ps -a 
+ls
+docker run -it ubuntu bash
+ls
